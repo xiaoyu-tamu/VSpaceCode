@@ -21,7 +21,6 @@
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "default",
     "javascript.format.enable": false,
-    "material-icon-theme.hidesExplorerArrows": true,
     "npm.packageManager": "yarn",
     "prettier.arrowParens": "always",
     "prettier.disableLanguages": [
@@ -32,7 +31,6 @@
     "prettier.printWidth": 80,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
-    "scm.diffDecorations": "all",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.fontSize": 17,
@@ -69,7 +67,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.showCommands",
+                    "command": "workbench.action.quickOpen",
                     "args": []
                 }
             ]
@@ -800,7 +798,7 @@
             "before": [
                 "<leader>",
                 "t",
-                "a"
+                "A"
             ],
             "after": [],
             "commands": [
@@ -814,7 +812,7 @@
             "before": [
                 "<leader>",
                 "t",
-                "m"
+                "M"
             ],
             "after": [],
             "commands": [
@@ -828,7 +826,7 @@
             "before": [
                 "<leader>",
                 "t",
-                "s"
+                "S"
             ],
             "after": [],
             "commands": [
@@ -842,7 +840,7 @@
             "before": [
                 "<leader>",
                 "t",
-                "w"
+                "W"
             ],
             "after": [],
             "commands": [
@@ -855,35 +853,7 @@
         {
             "before": [
                 "<leader>",
-                "T",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.debug.action.toggleRepl",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "T",
-                "e"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.actions.view.problems",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "T",
+                "t",
                 "F"
             ],
             "after": [],
@@ -897,13 +867,13 @@
         {
             "before": [
                 "<leader>",
-                "T",
-                "m"
+                "t",
+                "e"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.toggleMenuBar",
+                    "command": "workbench.view.extensions",
                     "args": []
                 }
             ]
@@ -911,7 +881,105 @@
         {
             "before": [
                 "<leader>",
-                "T",
+                "t",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.search",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "g"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.scm",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.view.debug",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.actions.view.problems",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "c"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.debug.action.toggleRepl",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "t"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.toggleTerminal",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
                 "o"
             ],
             "after": [],
@@ -966,12 +1034,12 @@
             "before": [
                 "<leader>",
                 "w",
-                "="
+                "+"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.evenEditorWidths",
+                    "command": "workbench.action.toggleEditorGroupLayout",
                     "args": []
                 }
             ]
@@ -980,12 +1048,12 @@
             "before": [
                 "<leader>",
                 "w",
-                "H"
+                "="
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.moveActiveEditorGroupLeft",
+                    "command": "workbench.action.evenEditorWidths",
                     "args": []
                 }
             ]
@@ -1022,26 +1090,12 @@
             "before": [
                 "<leader>",
                 "w",
-                "l"
+                "H"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.focusNextGroup",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "L"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.moveActiveEditorGroupRight",
+                    "command": "workbench.action.moveEditorToPreviousGroup",
                     "args": []
                 }
             ]
@@ -1064,12 +1118,26 @@
             "before": [
                 "<leader>",
                 "w",
-                "W"
+                "l"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.focusPreviousGroup",
+                    "command": "workbench.action.focusNextGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "L"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveEditorToNextGroup",
                     "args": []
                 }
             ]
@@ -1134,12 +1202,12 @@
             "before": [
                 "<leader>",
                 "w",
-                "+"
+                "W"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.toggleEditorGroupLayout",
+                    "command": "workbench.action.focusPreviousGroup",
                     "args": []
                 }
             ]
