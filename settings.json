@@ -1,5 +1,26 @@
 {
+    "editor.accessibilitySupport": "off",
+    "editor.dragAndDrop": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 17,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.glyphMargin": false,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 26,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderIndentGuides": false,
+    "editor.tabSize": 2,
+    "emmet.showSuggestionsAsSnippets": true,
     "eslint.nodePath": "/Users/xiaoyu/utilities/.nvm/versions/node/v9.7.1/bin/node",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+    "explorer.sortOrder": "default",
+    "javascript.format.enable": false,
     "material-icon-theme.hidesExplorerArrows": true,
     "npm.packageManager": "yarn",
     "prettier.arrowParens": "always",
@@ -8,50 +29,37 @@
         "markdown"
     ],
     "prettier.eslintIntegration": true,
-    "prettier.printWidth": 100,
+    "prettier.printWidth": 80,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.activityBar.visible": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    "emmet.showSuggestionsAsSnippets": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
-    "explorer.sortOrder": "default",
+    "scm.diffDecorations": "all",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "typescript.autoImportSuggestions.enabled": false,
+    "typescript.npm": "/Users/xiaoyu/utilities/.nvm/versions/node/v9.7.1/bin/npm",
+    "typescript.referencesCodeLens.enabled": false,
     "window.restoreWindows": "none",
     "window.zoomLevel": 0,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 17,
-    "editor.formatOnSave": true,
-    "editor.letterSpacing": 0.5,
-    "editor.lineHeight": 25,
-    "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": false,
-    "editor.tabSize": 2,
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontSize": 17,
-    "javascript.format.enable": false,
-    "typescript.referencesCodeLens.enabled": false,
-    "typescript.npm": "/Users/xiaoyu/utilities/.nvm/versions/node/v9.7.1/bin/npm",
-    "typescript.autoImportSuggestions.enabled": false,
-    "vim.leader": "<space>",
-    "vim.useCtrlKeys": true,
-    "vim.useSystemClipboard": true,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
     "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#fadb14",
     "vim.easymotionMarkerFontFamily": "Fira Code",
     "vim.easymotionMarkerFontSize": "17",
-    "vim.easymotionMarkerYOffset": 6,
-    "vim.easymotionMarkerHeight": 20,
-    "vim.easymotionMarkerWidthPerChar": 12,
+    "vim.easymotionMarkerFontWeight": "500",
     "vim.easymotionMarkerForegroundColorOneChar": "#222",
     "vim.easymotionMarkerForegroundColorTwoChar": "#222",
-    "vim.easymotionMarkerFontWeight": "500",
-    "vim.easymotionMarkerBackgroundColor": "#fadb14",
+    "vim.easymotionMarkerHeight": 22,
+    "vim.easymotionMarkerWidthPerChar": 12,
+    "vim.easymotionMarkerYOffset": 6,
+    "vim.leader": "<space>",
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -565,7 +573,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "j",
                 "j"
             ],
@@ -577,7 +585,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "j",
                 "l"
             ],
@@ -593,7 +601,7 @@
         },
         {
             "before": [
-                "leader",
+                "<leader>",
                 "j",
                 "w"
             ],
@@ -1171,7 +1179,12 @@
                 "s"
             ],
             "after": [],
-            "commands": []
+            "commands": [
+                {
+                    "command": "editor.action.sortLinesAscending",
+                    "args": []
+                }
+            ]
         },
         {
             "before": [
@@ -1180,7 +1193,12 @@
                 "S"
             ],
             "after": [],
-            "commands": []
+            "commands": [
+                {
+                    "command": "editor.action.sortLinesDescending",
+                    "args": []
+                }
+            ]
         },
         {
             "before": [
@@ -1200,8 +1218,8 @@
     "vim.insertModeKeyBindings": [
         {
             "before": [
-                "f",
-                "d"
+                "j",
+                "j"
             ],
             "after": [
                 "<Esc>"
