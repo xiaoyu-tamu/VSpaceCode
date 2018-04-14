@@ -1,5 +1,57 @@
 {
+    "eslint.nodePath": "/Users/xiaoyu/utilities/.nvm/versions/node/v9.7.1/bin/node",
+    "material-icon-theme.hidesExplorerArrows": true,
+    "npm.packageManager": "yarn",
+    "prettier.arrowParens": "always",
+    "prettier.disableLanguages": [
+        "vue",
+        "markdown"
+    ],
+    "prettier.eslintIntegration": true,
+    "prettier.printWidth": 100,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "emmet.showSuggestionsAsSnippets": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+    "explorer.sortOrder": "default",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "window.restoreWindows": "none",
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 17,
+    "editor.formatOnSave": true,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 25,
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "editor.tabSize": 2,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 17,
+    "javascript.format.enable": false,
+    "typescript.referencesCodeLens.enabled": false,
+    "typescript.npm": "/Users/xiaoyu/utilities/.nvm/versions/node/v9.7.1/bin/npm",
+    "typescript.autoImportSuggestions.enabled": false,
     "vim.leader": "<space>",
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerFontFamily": "Fira Code",
+    "vim.easymotionMarkerFontSize": "17",
+    "vim.easymotionMarkerYOffset": 6,
+    "vim.easymotionMarkerHeight": 20,
+    "vim.easymotionMarkerWidthPerChar": 12,
+    "vim.easymotionMarkerForegroundColorOneChar": "#222",
+    "vim.easymotionMarkerForegroundColorTwoChar": "#222",
+    "vim.easymotionMarkerFontWeight": "500",
+    "vim.easymotionMarkerBackgroundColor": "#fadb14",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -22,7 +74,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.openNextRecentlyUsedEditorInGroup",
+                    "command": "workbench.action.openPreviousEditorFromHistory",
                     "args": []
                 }
             ]
@@ -63,6 +115,75 @@
             "commands": [
                 {
                     "command": "workbench.action.findInFiles",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "?"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.openGlobalKeybindings",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "[",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.foldRecursively",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "]",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.unfoldRecursively",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "[",
+                "<space>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.insertLineBefore",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "]",
+                "<space>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.insertLineAfter",
                     "args": []
                 }
             ]
@@ -179,20 +300,6 @@
         {
             "before": [
                 "<leader>",
-                "e",
-                "l"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.actions.view.problems",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
                 "f",
                 "e"
             ],
@@ -213,7 +320,21 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.files.openFile",
+                    "command": "workbench.action.files.openFileFolder",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeFolder",
                     "args": []
                 }
             ]
@@ -417,20 +538,6 @@
         {
             "before": [
                 "<leader>",
-                "h",
-                "d"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.openGlobalKeybindings",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
                 "i",
                 "s"
             ],
@@ -536,7 +643,7 @@
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.files.openFolder",
+                    "command": "workbench.action.files.openFileFolder",
                     "args": []
                 }
             ]
@@ -624,7 +731,7 @@
                     "args": []
                 }
             ]
-        },        
+        },
         {
             "before": [
                 "<leader>",
@@ -684,6 +791,90 @@
         {
             "before": [
                 "<leader>",
+                "t",
+                "a"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleActivityBarVisibility",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.toggleMinimap",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.toggleStatusbarVisibility",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.toggleWordWrap",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "T",
+                "d"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.debug.action.toggleRepl",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "T",
+                "e"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.actions.view.problems",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "T",
                 "F"
             ],
@@ -713,12 +904,12 @@
             "before": [
                 "<leader>",
                 "T",
-                "s"
+                "o"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.selectTheme",
+                    "command": "workbench.action.output.toggleOutput",
                     "args": []
                 }
             ]
@@ -727,12 +918,12 @@
             "before": [
                 "<leader>",
                 "T",
-                "t"
+                "s"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.toggleActivityBarVisibility",
+                    "command": "workbench.action.selectTheme",
                     "args": []
                 }
             ]
@@ -759,6 +950,34 @@
             "commands": [
                 {
                     "command": "editor.action.smartSelect.shrink",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "="
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.evenEditorWidths",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "H"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.moveActiveEditorGroupLeft",
                     "args": []
                 }
             ]
@@ -795,20 +1014,6 @@
             "before": [
                 "<leader>",
                 "w",
-                "H"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.moveActiveEditorGroupLeft",
-                    "args": []
-                }
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
                 "l"
             ],
             "after": [],
@@ -837,12 +1042,54 @@
             "before": [
                 "<leader>",
                 "w",
+                "j"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.joinTwoGroups",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "W"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusPreviousGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
                 "m"
             ],
             "after": [],
             "commands": [
                 {
                     "command": "workbench.action.maximizeEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "n"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.newWindow",
                     "args": []
                 }
             ]
@@ -879,12 +1126,40 @@
             "before": [
                 "<leader>",
                 "w",
-                "W"
+                "+"
             ],
             "after": [],
             "commands": [
                 {
-                    "command": "workbench.action.focusPreviousGroup",
+                    "command": "workbench.action.toggleEditorGroupLayout",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x",
+                "F"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.formatDocument",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x",
+                "f"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "editor.action.formatSelection",
                     "args": []
                 }
             ]
@@ -896,12 +1171,16 @@
                 "s"
             ],
             "after": [],
-            "commands": [
-                {
-                    "command": "editor.action.sortLinesAscending",
-                    "args": []
-                }
-            ]
+            "commands": []
+        },
+        {
+            "before": [
+                "<leader>",
+                "x",
+                "S"
+            ],
+            "after": [],
+            "commands": []
         },
         {
             "before": [
@@ -928,6 +1207,5 @@
                 "<Esc>"
             ]
         }
-    ],
-    "vim.easymotion": true
+    ]
 }
